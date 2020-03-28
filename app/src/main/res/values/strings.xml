@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SeaTable</string>
+        <string name="asset_statements">[{ \"include\": \"https://cloud.seatable.cn/.well-known/assetlinks.json\" }]</string>
+</resources>

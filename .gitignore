@@ -53,3 +53,6 @@ out/
 
 *.store
 *.jks
+app/private_key.pepk
+app/seatable_store
+/app/release

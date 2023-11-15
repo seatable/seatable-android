@@ -47,6 +47,17 @@ android {
         }
     }
 
+    bundle {
+        density {
+            enableSplit true
+        }
+        abi {
+            enableSplit true
+        }
+        language {
+            enableSplit true
+        }
+    }
 }
 
 dependencies {

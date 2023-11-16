@@ -1,14 +1,16 @@
 apply plugin: 'com.android.application'
 
-android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
+def pid = "io.seatable"
 
+android {
 
     defaultConfig {
-        applicationId "io.seatable"
+        applicationId pid
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 5
+        compileSdk rootProject.ext.targetSdkVersion
+
+        versionCode 6
         versionName "1.0.4"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -64,8 +66,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'com.github.GoogleChrome.custom-tabs-client:customtabs:d08e93fce3'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
